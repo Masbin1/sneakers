@@ -81,20 +81,20 @@ class DetailMobilePage extends StatelessWidget {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      const Icon(Icons.calendar_today),
+                      const Icon(Icons.store),
                       const SizedBox(height: 8.0),
                       Text(
-                        place.openDays,
+                        place.brand,
                         style: informationTextStyle,
                       ),
                     ],
                   ),
                   Column(
                     children: <Widget>[
-                      const Icon(Icons.access_time),
+                      const Icon(Icons.verified),
                       const SizedBox(height: 8.0),
                       Text(
-                        place.openTime,
+                        place.verified,
                         style: informationTextStyle,
                       ),
                     ],
@@ -244,7 +244,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                                       const Icon(Icons.calendar_today),
                                       const SizedBox(width: 8.0),
                                       Text(
-                                        widget.place.openDays,
+                                        widget.place.brand,
                                         style: informationTextStyle,
                                       ),
                                     ],
@@ -257,7 +257,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                                   const Icon(Icons.access_time),
                                   const SizedBox(width: 8.0),
                                   Text(
-                                    widget.place.openTime,
+                                    widget.place.verified,
                                     style: informationTextStyle,
                                   ),
                                 ],

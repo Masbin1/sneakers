@@ -11,7 +11,7 @@ class MainScreen extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Wisata Bandung'),
+            title: const Text('Shoes'),
           ),
           body: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints) {
@@ -76,7 +76,11 @@ class TourismPlaceGrid extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0, bottom: 8.0),
                       child: Text(
-                        place.location,
+                        place.brand,
+                        style: const TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
@@ -123,12 +127,12 @@ class TourismPlaceList extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             place.name,
-                            style: const TextStyle(fontSize: 16.0),
+                            style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                           ),
                           const SizedBox(
                             height: 10,
                           ),
-                          Text(place.location),
+                          Text(place.brand),
                         ],
                       ),
                     ),
