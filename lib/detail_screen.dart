@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:wisata_bandung/model/tourism_place.dart';
+import 'package:wisata_bandung/model/shoes_stock.dart';
 
 var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
 
 class DetailScreen extends StatelessWidget {
-  final TourismPlace place;
+  final BrandStock place;
 
   const DetailScreen({Key? key, required this.place}) : super(key: key);
 
@@ -24,7 +24,7 @@ class DetailScreen extends StatelessWidget {
 }
 
 class DetailMobilePage extends StatelessWidget {
-  final TourismPlace place;
+  final BrandStock place;
 
   const DetailMobilePage({Key? key, required this.place}) : super(key: key);
 
@@ -146,7 +146,7 @@ class DetailMobilePage extends StatelessWidget {
 }
 
 class DetailWebPage extends StatefulWidget {
-  final TourismPlace place;
+  final BrandStock place;
 
   const DetailWebPage({Key? key, required this.place}) : super(key: key);
 

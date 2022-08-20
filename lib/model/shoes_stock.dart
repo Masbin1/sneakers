@@ -1,4 +1,4 @@
-class TourismPlace {
+class BrandStock {
   String name;
   String brand;
   String verified;
@@ -7,7 +7,7 @@ class TourismPlace {
   String imageAsset;
   List<String> imageUrls;
 
-  TourismPlace({
+  BrandStock({
     required this.name,
     required this.brand,
     required this.verified,
@@ -18,8 +18,8 @@ class TourismPlace {
   });
 }
 
-var tourismPlaceList = [
-  TourismPlace(
+var brandStockList = [
+  BrandStock(
     name: "Adidas Forum Low M&M's Red",
     brand: 'Adidas',
     verified: 'Verified',
@@ -33,7 +33,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzM1OTI0LzFkZjkwNjQ0MWRmM2NlNjYxZjg3YmI3MTk4OTc1NzEwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ=='
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'Jordan 1 Low Shadow Toe',
     brand: 'Nike',
     verified: 'Verified',
@@ -47,7 +47,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzMyNTI1L2IzNDdkYTk2NzhhNWIyOWM0M2I2OWUyZThjMjhhNDNmLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'Jordan 11 Retro Cool Grey',
     brand: 'Nike',
     verified: 'Verified',
@@ -61,7 +61,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzI4MDE0L2VmYmM1OWIzZTdjOTFkMDA5YTI0YWM1NGY1YjgxZjQ4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'adidas Superstar White Black (W)',
     brand: 'adidas',
     verified: 'Verified',
@@ -75,7 +75,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzE0NTA5Lzg0ZGRkMjc0NjYxZTM3MzUyMGVlODMxNWU3YTQ2MTE3LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'Converse Chuck Taylor All-Star 70s Hi Off-White',
     brand: 'Converse',
     verified: 'Verified',
@@ -89,7 +89,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzI0NDcvZjJkMzg2YzgtZmUwMS00ZDg4LTgxNTEtOWM4NmExOTE2YWRjLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjE0MDB9fX0=',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'adidas Trae Young 1 Christmas',
     brand: 'Adidas',
     verified: 'Verified',
@@ -103,7 +103,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzI4NTkwL2ZhZDEwNjFjYzM3YjU2NWNlNzU3MmVjODYwYmUyNDIzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'Asics Gel Lyte Classic Tokyo',
     brand: 'Asics',
     verified: 'Verified',
@@ -117,7 +117,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzE4NzYxLzNiNGQ5ZWRmN2MyZjVmYWNhMDkzNTM4NDk4OWM0YWIzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: "Nike Air Force 1 '07 Triple White (W)",
     brand: 'Nike',
     verified: 'Verified',
@@ -131,7 +131,7 @@ var tourismPlaceList = [
       'https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzE2ODgyLzZkOGIyZDgwOGU1ZDBiYzBkMTQ4ZWZlNTE3YzQ4MmNlLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==',
     ],
   ),
-  TourismPlace(
+  BrandStock(
     name: 'Nike Classic Cortez Leather (W)',
     brand: 'Nike',
     verified: 'Verified',

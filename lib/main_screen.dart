@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wisata_bandung/detail_screen.dart';
-import 'package:wisata_bandung/model/tourism_place.dart';
+import 'package:wisata_bandung/model/shoes_stock.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -16,11 +16,11 @@ class MainScreen extends StatelessWidget {
           body: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints) {
               if (constraints.maxWidth <= 600) {
-                return const TourismPlaceList();
+                return const BrandStockList();
               } else if (constraints.maxWidth <= 1200) {
-                return const TourismPlaceGrid(gridCount: 4);
+                return const BrandStockGrid(gridCount: 4);
               } else {
-                return const TourismPlaceGrid(gridCount: 6);
+                return const BrandStockGrid(gridCount: 6);
               }
             },
           ),
@@ -30,10 +30,10 @@ class MainScreen extends StatelessWidget {
   }
 }
 
-class TourismPlaceGrid extends StatelessWidget {
+class BrandStockGrid extends StatelessWidget {
   final int gridCount;
 
-  const TourismPlaceGrid({Key? key, required this.gridCount}) : super(key: key);
+  const BrandStockGrid({Key? key, required this.gridCount}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class TourismPlaceGrid extends StatelessWidget {
           crossAxisCount: gridCount,
           crossAxisSpacing: 16,
           mainAxisSpacing: 16,
-          children: tourismPlaceList.map((place) {
+          children: brandStockList.map((place) {
             return InkWell(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -94,8 +94,8 @@ class TourismPlaceGrid extends StatelessWidget {
   }
 }
 
-class TourismPlaceList extends StatelessWidget {
-  const TourismPlaceList({Key? key}) : super(key: key);
+class BrandStockList extends StatelessWidget {
+  const BrandStockList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -103,7 +103,7 @@ class TourismPlaceList extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: ListView.builder(
         itemBuilder: (context, index) {
-          final TourismPlace place = tourismPlaceList[index];
+          final BrandStock place = brandStockList[index];
           return InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -142,7 +142,7 @@ class TourismPlaceList extends StatelessWidget {
             ),
           );
         },
-        itemCount: tourismPlaceList.length,
+        itemCount: brandStockList.length,
       ),
     );
   }
