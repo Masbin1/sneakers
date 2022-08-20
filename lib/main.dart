@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wisata_bandung/main_screen.dart';
+import 'package:sneakers/main_screen.dart';
 
 void main() => runApp(const MyApp());
 

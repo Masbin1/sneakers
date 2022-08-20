@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:wisata_bandung/model/shoes_stock.dart';
+import 'package:sneakers/model/shoes_stock.dart';
 
 var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
 
@@ -175,7 +175,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 const Text(
-                  'Wisata Bandung',
+                  'sneakers',
                   style: TextStyle(
                     fontFamily: 'Staatliches',
                     fontSize: 32,
@@ -237,7 +237,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                               ),
                               Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Row(
                                     children: <Widget>[
@@ -274,7 +274,8 @@ class _DetailWebPageState extends State<DetailWebPage> {
                                 ],
                               ),
                               Container(
-                                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 16.0),
                                 child: Text(
                                   widget.place.description,
                                   textAlign: TextAlign.justify,

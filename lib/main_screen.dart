@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wisata_bandung/detail_screen.dart';
-import 'package:wisata_bandung/model/shoes_stock.dart';
+import 'package:sneakers/detail_screen.dart';
+import 'package:sneakers/model/shoes_stock.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -127,7 +127,8 @@ class BrandStockList extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             place.name,
-                            style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                            style: const TextStyle(
+                                fontSize: 16.0, fontWeight: FontWeight.bold),
                           ),
                           const SizedBox(
                             height: 10,
